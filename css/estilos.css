@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,700;1,700&display=swap');
+:root{
+    --yellow: #FCEE21;
+}
+/* font-family: "Roboto", sans-serif;
+font-family: "Coiny", sans-serif; 
+coiny 400
+roboto 400 y 700*/
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 2px;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+h1{
+    font-family: "Coiny", sans-serif; 
+    font-weight: 400;
+    font-size: 50px;
+}
+h4{
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+ header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+ }
+ a{
+    text-decoration: none;
+    color: gray;
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+ .container-uno, .container-dos, .container-tres{
+    display: flex;
+    flex-direction: column;
+ }
+ .container-uno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+
+ }
+ .container-dt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 340px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ol,li{
+    margin: 35px;
+    list-style-position: inside;
+}
+.border{
+    width: 100%;
+    border: black 1px solid;
+}
+.logo{
+    width: 240px;
+    height: 56px;
+}
+.foto{
+    width: 600px;
+    height: 500px;
+}
+
+.servicio-foto{
+    width: 540px;
+    height: 537px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    gap: 10px;
+    textarea{
+    resize: none;
+    height: 150px;
+}
+    .botones{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    input{
+    background-color: black;
+    color: white;
+    width: 150px;
+    }
+}
+}
+
+.servicios{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+article{
+    margin: 5px;
+
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .required{
+    color: red;
+    background-color: whitesmoke;
+}
+    span{
+     background-color: black;
+     color: white;
+    }
+}
+footer{
+  display: flex;
+  gap: 30px;
+  justify-content: baseline;
+  background-color: var(--yellow);
+  h3{
+    background-color: var(--yellow);
+  }
+  a{
+    background-color: var(--yellow);
+  }
+}
+.redes{
+    width: 100vw;
+    color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    img{
+        height: 80px;
+    }
+}
+.yellow{
+    background-color: var(--yellow);
+    width: 350px;
+   
+
+}
+
+/* RESPONSIVE */
+@media(min-width: 320px) and (max-width: 767px){
+  header{
+    border: solid 1px gray;
+    flex-direction: column;
+    gap: 2px;
+    nav{
+        flex-direction: column;
+        gap: 2px;
+    }
+  }
+  .foto{
+    width: 250px;
+    height: 250px;
+}
+main, .container-uno, .container-dt, .container-dos,.container-tres{
+    font-size: 14px;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container-uno{
+    width: 200px;
+}
+.servicios{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicio-foto{
+width: 250px;
+height: 250px;
+margin-top: 15px;
+}
+h2{
+    text-align: center;
+}
+ol, li{
+    text-align: center;
+    font-size: 12px;
+}
+
+.contacto{
+    flex-direction: column;
+    gap: 10px;
+    div{
+        text-align: center;
+        font-size: 14px;
+        gap: 2px;
+        width: 300px;
+    }
+}
+
+.form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    textarea, input{
+ width: 220px;
+}
+    .botones{
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 2px;
+    
+    input{
+
+    width: 280px;
+}
+
+}
+}
+
+.redes{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.yellow{
+    width: 290px;
+    text-align: center;
+}
+footer{
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
+@media(min-width: 768px) and (max-width: 900px){
+    header{
+        padding: 0;
+        gap: 20px;
+    }
+    .foto{
+    width: 340px;
+    height: 300px;
+}
+     .container-uno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+
+ }
+ .container-dt{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 15px;
+    
+ }
+.servicios{
+gap: 1px;
+    margin-bottom: 30px;
+}
+.servicio-foto{
+    width: 400px;
+    height: 320px;
+    margin: 10px;
+    padding-left: 40px;
+}
+.yellow{
+    width: 250px;
+}
+.redes{
+    width: 95%;
+    padding: 0;
+}
+ol, li{
+    font-size: 14px;
+}
+
+}
